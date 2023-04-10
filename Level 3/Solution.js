@@ -13,11 +13,9 @@ function controlCar(scanArray){
   const index =  scanArray.indexOf(max);
   if ( index < 7 ){
     return -1;                                                        // if maximum distance is at left return -1 (move left)
-  }
-  else if ( index > 7 ){
+  }else if ( index > 7 ){
     return 1;                                                         // if maximum distance is at right return 1 (move right)
-  }
-  else{
+  }else{
     return 0;                                                         // if maximum distance is at the center return 0 (no turn)
   }
 }
