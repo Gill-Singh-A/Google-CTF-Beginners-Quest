@@ -1,3 +1,4 @@
+# Solution
 We have a zip file here.
 By extracting the zip file, we get a png image in which a circuit with some logical gates are shown.
 We can solve this simply by looking at the output of each gates with different input.
