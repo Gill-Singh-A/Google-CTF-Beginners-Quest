@@ -2,7 +2,7 @@
 Website = https://cctv-web.2021.ctfcompetition.com/ <br />
 On Inspecting the Website, we found the algorithm for checking the password that is written in javascript <br/><br/>
 
-'''javascript
+'''
 const checkPassword = () => {
   const v = document.getElementById("password").value;
   const p = Array.from(v).map(a => 0xCafe + a.charCodeAt(0));
@@ -29,7 +29,7 @@ This takes input from the form in v and creates an array p in which the ascii va
 
 So let's make a program in python that stores those values in a list, then subtracts them with 51966, make a list of characters with those values and finally join the list to get the password.
 Here is the python program that does the work:
-'''python
+'''
 inc = 0xcafe
 lst = [52037, 52077, 52077, 52066, 52046, 52063, 52081, 52081, 52085, 52077, 52080, 52066]
 lst = [i-inc for i in lst]
